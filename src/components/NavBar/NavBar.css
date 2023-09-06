@@ -1,0 +1,249 @@
+.NavBar-header {
+  display: flex;
+  align-items: center;
+  margin-left: 0px;
+  margin-right: auto;
+}
+.NavBar-header h1 {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo {
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Adjust the height as needed */
+  margin-left: auto;
+  margin-right: 0px; /* Adjust the margin as needed */
+}
+
+.title {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-menu li {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #000; /* Adjust the color as needed */
+}
+
+.navbar-container {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 999;
+  height: 100px;
+  display: inline;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 12px;
+  list-style: none;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  color: black;
+  font-family: "Lora", Lato, helvetica, arial, sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
+
+.nav-links.active {
+  color: #c07c45;
+}
+
+.nav-links:hover {
+  color: #c07c45;
+}
+
+.fa-bars {
+  color: black;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    margin-left: 0px;
+  }
+  .menu-icon {
+    margin-top: 7px;
+    margin-right: 20px;
+  }
+  .NavBar-header {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: auto;
+  }
+  .NavBar-header h1 {
+    display: flex;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-item {
+    margin-bottom: 10px;
+    margin-right: 30px;
+  }
+
+  .nav-menu.active {
+    background: #ffffff;
+    left: 0;
+    z-index: 1;
+    padding-bottom: 0px;
+    margin-top: 40px;
+    height: auto;
+    width: 90%;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: 1px solid #c07c45;
+  }
+  .nav-links {
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    color: #242424;
+    border-radius: 0;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #000000;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile:hover {
+    transition: 2000ms;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    height: 50px;
+    background-color: #ffffff;
+    position: absolute;
+    overflow: hidden;
+  }
+  .NavBar-header {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: auto;
+  }
+  .NavBar-header h1 {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    margin-left: auto;
+    margin-right: 0px;
+    /* Adjust the margin as needed */
+  }
+
+  .menu-icon {
+    margin-top: 1px;
+    margin-right: 10px;
+    margin-top: 8px;
+  }
+
+  .nav-links {
+    margin-left: -30px;
+  }
+
+  .nav-menu.active {
+    background: #ffffff;
+    left: 0;
+    z-index: 1;
+    padding-bottom: 0px;
+    margin-top: 40px;
+    height: 400px;
+    width: 90%;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: 1px solid #c07c45;
+  }
+  .navbar-logo h6 {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+  }
+  .nav-links {
+    margin-top: 0px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .nav-item {
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
